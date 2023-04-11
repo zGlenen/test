@@ -1,0 +1,20 @@
+W0486242	Ridout	Gustavo	07576 Sunfield Crossing	Acton Vale	Québec	Q8Q-8H9	037-578-3969	M	52	0	sales	N	39.69
+W9457507	Skipper	Angelo	3 Browning Parkway	Rivière-du-Loup	Québec	Y3J-0Q8	225-092-7489	M	24	2	factory	Y	98.86
+W2908115	Amey	Maighdiln	53 Toban Terrace	East Angus	Québec	F0L-5J3	191-096-5889	F	23	10	factory	N	28.79
+W3054081	Conichie	Marlon	04 Reinke Alley	Kentville	Nova Scotia	A3Q-7Z0	881-137-0043	M	28	10	office	Y	43.69
+W4489276	Jellard	Halsy	35 Hazelcrest Avenue	Kitimat	British Columbia	Y2R-1H7	367-539-3243	M	41	1	factory	N	26.68
+W8282493	Dedon	Keven	128 Ohio Alley	Martensville	Saskatchewan	H0R-6R2	071-039-4800	M	20	5	sales	N	17.27
+W2787650	Garbutt	Sergio	95 Sachs Center	Richibucto	New Brunswick	P1U-3J4	043-876-5201	M	29	0	sales	Y	77.57
+W1682610	Dabling	Win	295 Stang Lane	Cornwall	Prince Edward Island	G8D-6X8	349-314-0267	M	33	5	factory	Y	16.79
+W9680741	Heake	Debera	66 Buell Lane	Hantsport	Nova Scotia	X5S-7Y3	189-055-3414	F	58	3	factory	Y	81.32
+W3071476	Gohier	Vilma	33379 Beilfuss Pass	Bells Corners	Ontario	C1M-5A9	499-088-0791	F	28	5	sales	Y	31.02
+W7949092	Bacop	Pincas	5 Delladonna Center	Clarence-Rockland	Ontario	G3H-3G1	015-565-8763	M	58	7	sales	N	64.01
+W9530704	McIlwain	Lorens	912 Barby Point	Amherstburg	Ontario	V7I-5X2	842-111-6636	M	56	2	office	Y	19.48
+W5008688	Lopes	Raimund	2864 Monument Street	Bowen Island	British Columbia	U4W-1J4	968-646-5164	M	35	3	office	Y	48.73
+W8842252	Brister	Herculie	627 Vermont Center	Smithers	British Columbia	T0D-9E4	031-306-0691	M	23	7	sales	N	84.89
+W4276527	Bewshaw	Bernadina	8 Garrison Terrace	Albanel	Québec	O4A-8X0	879-175-8059	F	40	6	sales	N	72.86
+W3612162	Haseldine	Godfry	86 Lake View Street	Donnacona	Québec	L0N-7D7	712-976-9908	M	41	6	factory	Y	15.31
+W4228197	Sinney	Chickie	552 Surrey Parkway	Richmond	British Columbia	Y2X-9T6	478-101-0720	M	59	9	factory	N	37.61
+W3757000	Hopkyns	Amaleta	8 Talisman Drive	Lévis	Québec	I1E-2D1	358-719-7976	F	65	4	office	N	47.88
+W1567121	Peake	Ulrikaumeko	19026 Pond Plaza	Bécancour	Québec	S8J-6A3	272-873-4960	F	44	5	office	Y	33.21
+W5501264	Straun	Geraldine	8214 Kinsman Place	Oxford	Nova Scotia	X6R-3T8	290-659-0372	F	35	4	office	Y	19.03

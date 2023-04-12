@@ -1,20 +1,25 @@
-W0486242	Ridout	Gustavo	07576 Sunfield Crossing	Acton Vale	Québec	Q8Q-8H9	037-578-3969	M	52	0	sales	N	39.69
-W9457507	Skipper	Angelo	3 Browning Parkway	Rivière-du-Loup	Québec	Y3J-0Q8	225-092-7489	M	24	2	factory	Y	98.86
-W2908115	Amey	Maighdiln	53 Toban Terrace	East Angus	Québec	F0L-5J3	191-096-5889	F	23	10	factory	N	28.79
-W3054081	Conichie	Marlon	04 Reinke Alley	Kentville	Nova Scotia	A3Q-7Z0	881-137-0043	M	28	10	office	Y	43.69
-W4489276	Jellard	Halsy	35 Hazelcrest Avenue	Kitimat	British Columbia	Y2R-1H7	367-539-3243	M	41	1	factory	N	26.68
-W8282493	Dedon	Keven	128 Ohio Alley	Martensville	Saskatchewan	H0R-6R2	071-039-4800	M	20	5	sales	N	17.27
-W2787650	Garbutt	Sergio	95 Sachs Center	Richibucto	New Brunswick	P1U-3J4	043-876-5201	M	29	0	sales	Y	77.57
-W1682610	Dabling	Win	295 Stang Lane	Cornwall	Prince Edward Island	G8D-6X8	349-314-0267	M	33	5	factory	Y	16.79
-W9680741	Heake	Debera	66 Buell Lane	Hantsport	Nova Scotia	X5S-7Y3	189-055-3414	F	58	3	factory	Y	81.32
-W3071476	Gohier	Vilma	33379 Beilfuss Pass	Bells Corners	Ontario	C1M-5A9	499-088-0791	F	28	5	sales	Y	31.02
-W7949092	Bacop	Pincas	5 Delladonna Center	Clarence-Rockland	Ontario	G3H-3G1	015-565-8763	M	58	7	sales	N	64.01
-W9530704	McIlwain	Lorens	912 Barby Point	Amherstburg	Ontario	V7I-5X2	842-111-6636	M	56	2	office	Y	19.48
-W5008688	Lopes	Raimund	2864 Monument Street	Bowen Island	British Columbia	U4W-1J4	968-646-5164	M	35	3	office	Y	48.73
-W8842252	Brister	Herculie	627 Vermont Center	Smithers	British Columbia	T0D-9E4	031-306-0691	M	23	7	sales	N	84.89
-W4276527	Bewshaw	Bernadina	8 Garrison Terrace	Albanel	Québec	O4A-8X0	879-175-8059	F	40	6	sales	N	72.86
-W3612162	Haseldine	Godfry	86 Lake View Street	Donnacona	Québec	L0N-7D7	712-976-9908	M	41	6	factory	Y	15.31
-W4228197	Sinney	Chickie	552 Surrey Parkway	Richmond	British Columbia	Y2X-9T6	478-101-0720	M	59	9	factory	N	37.61
-W3757000	Hopkyns	Amaleta	8 Talisman Drive	Lévis	Québec	I1E-2D1	358-719-7976	F	65	4	office	N	47.88
-W1567121	Peake	Ulrikaumeko	19026 Pond Plaza	Bécancour	Québec	S8J-6A3	272-873-4960	F	44	5	office	Y	33.21
-W5501264	Straun	Geraldine	8214 Kinsman Place	Oxford	Nova Scotia	X6R-3T8	290-659-0372	F	35	4	office	Y	19.03
+W7843399	MacFayden	Merrill	912 Fallview Point	Otterburn Park	QC	C0H-3Z6	216-489-0626	F	43	7	factory	N	59.02
+W2344039	Klemke	May	4 Steensland Lane	Marystown	NL	N6C-8T7	961-686-8929	F	56	5	office	Y	89.58
+W5321018	Primarolo	Wes	17 Sullivan Pass	Niverville	MB	R2E-3G5	022-183-0663	M	45	4	factory	Y	16.37
+W8331206	Tremblet	Cameron	2123 Coolidge Terrace	Matagami	QC	J9A-4O2	432-988-5001	M	33	2	factory	N	46.44
+W9784508	Ferry	Urbano	78147 Annamark Terrace	Nipawin	SK	Y3E-8U5	141-788-0005	M	60	7	sales	Y	25.63
+W2458423	Fairham	Baron	44 Melvin Place	Moosomin	SK	U3X-5Q3	390-271-3218	M	18	9	factory	Y	19.03
+W3332518	Clue	Inessa	0 Red Cloud Junction	Virden	MB	Q7R-3J2	530-061-8337	F	63	1	sales	Y	75.13
+W9402834	Jewster	Cherrita	91 Kedzie Trail	Norfolk County	ON	Y6F-2Q2	718-193-0897	F	46	8	office	N	77.55
+W8068582	Leftridge	Katlin	37 Dahle Terrace	Richibucto	NB	S8U-1D5	679-218-3851	F	63	8	factory	Y	45.94
+W8021360	Tarbett	Gavan	6 Meadow Valley Park	Oak Bay	BC	C8Q-9G9	127-971-0879	M	57	0	sales	Y	70.83
+W4714273	Littrik	Terrence	3962 Holy Cross Alley	Casselman	ON	P5O-7O9	886-883-3557	M	55	7	factory	Y	36.78
+W6566018	Hurst	Kira	3 Utah Way	Clarence-Rockland	ON	Q7B-9X7	338-663-7701	F	50	10	factory	N	92.12
+W9490196	Leport	Auguste	3 Service Park	Lac-Mégantic	QC	W2Q-1J3	112-765-2712	F	46	0	factory	Y	99.69
+W4355773	Frodsam	Meta	339 Surrey Alley	Smiths Falls	ON	D9H-8R0	916-454-7472	F	40	8	office	Y	74.85
+W7586717	Whieldon	Marci	89603 Elka Circle	East Angus	QC	J1M-1V6	136-427-0344	F	42	6	sales	N	91.58
+W4074591	Stangroom	Merola	4 Everett Pass	Kingston	ON	L5C-0G3	424-102-1636	F	51	2	office	N	32.21
+W4175377	Assender	Carlita	2 Petterle Alley	Chilliwack	BC	X8M-1R1	492-807-0375	F	31	7	sales	Y	51.24
+W8575932	Handaside	Xylina	7 Vahlen Plaza	Baie-Comeau	QC	R1M-2G3	178-877-9983	F	43	5	office	Y	55.27
+W6764314	Jansey	Janot	4544 Scoville Park	Ladner	BC	A7O-5V3	039-252-5267	F	47	6	sales	Y	24.16
+W1947784	Skyme	Callida	63 Golf View Point	Unity	SK	R5R-5K5	298-710-2405	F	34	6	office	N	90.62
+W9261430	Lapham	Henriette	3769 Swallow Place	Sechelt	BC	T5U-9G8	394-124-4207	F	19	1	sales	Y	98.78
+W7202107	Roylance	Delila	93426 Cardinal Junction	Asbestos	QC	O3F-6P5	663-371-6700	F	24	9	factory	N	53.32
+W8633943	Horlick	Tana	4 Lakewood Gardens Way	Picton	ON	F1K-0B6	102-347-2378	F	56	7	sales	N	68.02
+W4412794	Himpson	Cordi	48 Talisman Parkway	Keswick	ON	X0U-6Z6	719-927-4589	F	56	6	sales	N	41.88
+W8443468	Dennitts	Dulsea	896 Moulton Point	White City	SK	E1R-6R6	163-704-6621	F	41	0	office	Y	71.69

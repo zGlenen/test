@@ -7,86 +7,212 @@ Employee::Employee(const std::string& data) {
     int i = 0;
     while (std::getline(iss, field, '\t')) {
         switch (i) {
-            case 0: employee_id = field; break;
-            case 1: last_name = field; break;
-            case 2: first_name = field; break;
-            case 3: address = field; break;
-            case 4: city = field; break;
-            case 5: province = field; break;
-            case 6: postal_code = field; break;
-            case 7: phone_number = field; break;
-            case 8: gender = field[0]; break;
-            case 9: age = std::stoi(field); break;
-            case 10: num_of_dependants = std::stoi(field); break;
-            case 11: department_category = field; break;
-            case 12: union_member = field[0]; break;
-            case 13: hourly_rate = std::stof(field); break;
+            case 0: m_employee_id = field; break;
+            case 1: m_last_name = field; break;
+            case 2: m_first_name = field; break;
+            case 3: m_address = field; break;
+            case 4: m_city = field; break;
+            case 5: m_province = field; break;
+            case 6: m_postal_code = field; break;
+            case 7: m_phone_number = field; break;
+            case 8: m_gender = field[0]; break;
+            case 9: m_age = std::stoi(field); break;
+            case 10: m_num_of_dependants = std::stoi(field); break;
+            case 11: m_department_category = field; break;
+            case 12: m_union_member = field[0]; break;
+            case 13: m_hourly_rate = std::stof(field); break;
             default: break;
         }
         i++;
     }
+    m_sorting_field = 0;
 }
+
 Employee::Employee(const Employee& other) {
-    employee_id = other.employee_id;
-    last_name = other.last_name;
-    first_name = other.first_name;
-    address = other.address;
-    city = other.city;
-    province = other.province;
-    postal_code = other.postal_code;
-    phone_number = other.phone_number;
-    gender = other.gender;
-    age = other.age;
-    num_of_dependants = other.num_of_dependants;
-    department_category = other.department_category;
-    union_member = other.union_member;
-    hourly_rate = other.hourly_rate;
+    m_employee_id = other.m_employee_id;
+    m_last_name = other.m_last_name;
+    m_first_name = other.m_first_name;
+    m_address = other.m_address;
+    m_city = other.m_city;
+    m_province = other.m_province;
+    m_postal_code = other.m_postal_code;
+    m_phone_number = other.m_phone_number;
+    m_gender = other.m_gender;
+    m_age = other.m_age;
+    m_num_of_dependants = other.m_num_of_dependants;
+    m_department_category = other.m_department_category;
+    m_union_member = other.m_union_member;
+    m_hourly_rate = other.m_hourly_rate;
+    m_sorting_field = other.m_sorting_field;
 }
 
-
-std::string Employee::getField(int field) {
-    std::string value;
-    //case 3 broken
-    //case 5 broken
-    //case 8 broken
-    //case 9 broken
-    //case 10 and up broken
-
-    switch (field) {
-        case 0: value = employee_id; break;
-        case 1: value = last_name; break;
-        case 2: value = first_name; break;
-        case 3: value = address; break;
-        case 4: value = city; break;
-        case 5: value = province; break;
-        case 6: value = postal_code; break;
-        case 7: value = phone_number; break;
-        case 8: value = gender; break;
-        case 9: value = std::to_string(age); break;
-        case 10: value = std::to_string(num_of_dependants); break;
-        case 11: value = department_category; break;
-        case 12: value = union_member; break;
-        case 13: value = std::to_string(hourly_rate); break;
-        default: break;
+int Employee::get_address() const {
+    std::string address_num;
+    for (char c : m_address) {
+        if (std::isdigit(c)) {
+            address_num += c;
+        } else {
+            break;
+        }
     }
-    return value;
+    return address_num.empty() ? 0 : std::stoi(address_num.substr(0, address_num.length()));
 }
 
+bool operator>(const Employee& left,const Employee& right){
+    bool isGreaterThan = false;
+    switch (left.m_sorting_field) {
+        case 0:
+            isGreaterThan = left.m_employee_id > right.m_employee_id;break;
+        case 1:
+            isGreaterThan = left.m_last_name > right.m_last_name;break;
+        case 2:
+            isGreaterThan = left.m_first_name > right.m_first_name;break;
+        case 3:
+            isGreaterThan = left.get_address() > right.get_address(); break;
+        case 4:
+            isGreaterThan = left.m_city > right.m_city; break;
+        case 5:
+            isGreaterThan = left.m_province > right.m_province;break;
+        case 6:
+            isGreaterThan = left.m_postal_code > right.m_postal_code;break;
+        case 7:
+            isGreaterThan = left.m_phone_number > right.m_phone_number;break;
+        case 8:
+            isGreaterThan = left.m_gender > right.m_gender;break;
+        case 9:
+            isGreaterThan = left.m_age > right.m_age;break;
+        case 10:
+            isGreaterThan = left.m_num_of_dependants > right.m_num_of_dependants;break;
+        case 11:
+            isGreaterThan = left.m_department_category > right.m_department_category;break;
+        case 12:
+            isGreaterThan = left.m_union_member > right.m_union_member;break;
+        case 13:
+            isGreaterThan = left.m_hourly_rate > right.m_hourly_rate;break;
+        default:break;
+    }
+    return isGreaterThan;
+}
+bool operator<(const Employee& left,const Employee& right){
+    bool isLessThan = false;
+    switch (left.m_sorting_field) {
+        case 0:
+            isLessThan = left.m_employee_id < right.m_employee_id;break;
+        case 1:
+            isLessThan = left.m_last_name < right.m_last_name;break;
+        case 2:
+            isLessThan = left.m_first_name < right.m_first_name;break;
+        case 3:
+            isLessThan = left.get_address() < right.get_address();break;
+        case 4:
+            isLessThan = left.m_city < right.m_city;break;
+        case 5:
+            isLessThan = left.m_province < right.m_province;break;
+        case 6:
+            isLessThan = left.m_postal_code < right.m_postal_code;break;
+        case 7:
+            isLessThan = left.m_phone_number < right.m_phone_number;break;
+        case 8:
+            isLessThan = left.m_gender < right.m_gender;break;
+        case 9:
+            isLessThan = left.m_age < right.m_age;break;
+        case 10:
+            isLessThan = left.m_num_of_dependants < right.m_num_of_dependants;break;
+        case 11:
+            isLessThan = left.m_department_category < right.m_department_category;
+            break;
+        case 12:
+            isLessThan = left.m_union_member < right.m_union_member;break;
+        case 13:
+            isLessThan = left.m_hourly_rate < right.m_hourly_rate;break;
+        default:break;
+    }
+    return isLessThan;
+}
+bool operator>=(const Employee& left,const Employee& right){
+    bool isLessThan = false;
+    switch (left.m_sorting_field) {
+        case 0:
+            isLessThan = left.m_employee_id >= right.m_employee_id;break;
+        case 1:
+            isLessThan = left.m_last_name >= right.m_last_name;break;
+        case 2:
+            isLessThan = left.m_first_name >= right.m_first_name;break;
+        case 3:
+            isLessThan = left.get_address() >= right.get_address();break;
+        case 4:
+            isLessThan = left.m_city >= right.m_city;break;
+        case 5:
+            isLessThan = left.m_province >= right.m_province;break;
+        case 6:
+            isLessThan = left.m_postal_code >= right.m_postal_code;break;
+        case 7:
+            isLessThan = left.m_phone_number >= right.m_phone_number;break;
+        case 8:
+            isLessThan = left.m_gender >= right.m_gender;break;
+        case 9:
+            isLessThan = left.m_age >= right.m_age;break;
+        case 10:
+            isLessThan = left.m_num_of_dependants >= right.m_num_of_dependants;break;
+        case 11:
+            isLessThan = left.m_department_category >= right.m_department_category;break;
+        case 12:
+            isLessThan = left.m_union_member >= right.m_union_member;break;
+        case 13:
+            isLessThan = left.m_hourly_rate >= right.m_hourly_rate;break;
+        default:break;
+    }
+    return isLessThan;
+}
+bool operator<=(const Employee& left,const Employee& right){
+    bool isLessThan = false;
+    switch (left.m_sorting_field) {
+        case 0:
+            isLessThan = left.m_employee_id <= right.m_employee_id;break;
+        case 1:
+            isLessThan = left.m_last_name <= right.m_last_name;break;
+        case 2:
+            isLessThan = left.m_first_name <= right.m_first_name;break;
+        case 3:
+            isLessThan = left.get_address() <= right.get_address();break;
+        case 4:
+            isLessThan = left.m_city <= right.m_city;break;
+        case 5:
+            isLessThan = left.m_province <= right.m_province;break;
+        case 6:
+            isLessThan = left.m_postal_code <= right.m_postal_code;break;
+        case 7:
+            isLessThan = left.m_phone_number <= right.m_phone_number;break;
+        case 8:
+            isLessThan = left.m_gender <= right.m_gender;break;
+        case 9:
+            isLessThan = left.m_age <= right.m_age;break;
+        case 10:
+            isLessThan = left.m_num_of_dependants <= right.m_num_of_dependants;break;
+        case 11:
+            isLessThan = left.m_department_category <= right.m_department_category;break;
+        case 12:
+            isLessThan = left.m_union_member <= right.m_union_member;break;
+        case 13:
+            isLessThan = left.m_hourly_rate <= right.m_hourly_rate;break;
+        default:break;
+    }
+    return isLessThan;
+}
 std::ostream &operator<<(std::ostream &output, Employee &e) {
-    output << e.employee_id << "\t\t";
-    output << e.last_name << "\t\t";
-    output << e.first_name << "\t\t";
-    output << e.address << "\t\t";
-    output << e.city << "\t\t";
-    output << e.province << "\t\t";
-    output << e.postal_code << "\t\t";
-    output << e.phone_number << "\t\t";
-    output << e.gender << "\t\t";
-    output << e.age << "\t\t";
-    output << e.num_of_dependants << "\t\t";
-    output << e.department_category << "\t\t";
-    output << e.union_member << "\t\t";
-    output << e.hourly_rate;
-
+    output << e.m_employee_id << "\t";
+    output << e.m_last_name << "\t";
+    output << e.m_first_name << "\t";
+    output << e.m_address << "\t";
+    output << e.m_city << "\t";
+    output << e.m_province << "\t";
+    output << e.m_postal_code << "\t";
+    output << e.m_phone_number << "\t";
+    output << e.m_gender << "\t";
+    output << e.m_age << "\t";
+    output << e.m_num_of_dependants << "\t";
+    output << e.m_department_category << "\t";
+    output << e.m_union_member << "\t";
+    output << e.m_hourly_rate;
     return output;
 }

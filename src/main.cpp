@@ -1,16 +1,7 @@
 #include <iostream>
-#include <span>
-#include <iomanip>
 #include <queue>
 #include "merge_sort.h"
 #include "employee.h"
-
-void dump_array(std::span<int> array) {
-    for (int i : array) {
-        std::cout << std::setw(3) << i;
-    }
-    std::cout << std::endl;
-}
 
 std::ostream& operator<<(std::ostream& output, std::queue<Employee> queue) {
     while (queue.size() > 1) {
@@ -22,17 +13,7 @@ std::ostream& operator<<(std::ostream& output, std::queue<Employee> queue) {
     return output;
 }
 
-std::ostream& operator<<(std::ostream& output, std::span<int> array) {
-    if (array.empty()) return output;
-    int i = 0;
-    for (; i < array.size() - 1; i++) {
-        output << array[i] << ",";
-    }
-    output << array[i];
-    return output;
-}
-
-void open_file(std::queue<Employee>& e,std::string file_name){
+void open_file(std::queue<Employee>& e,const std::string& file_name){
     std::fstream file;
     file.open(file_name,std::ios::in);
     std::string line;
@@ -48,9 +29,6 @@ int main() {
 
     std::queue<Employee> employees;
     open_file(employees,"../src/assign4.txt");
-
-
-    auto nums = std::to_array({3, 6, 8, 10, 5, 9, 4, 1, 2, 7});
 
     std::cout << "Before Sorting ..." << std::endl;
     std::cout << employees << std::endl;
